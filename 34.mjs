@@ -19,4 +19,4 @@ for(let i = 3; i < 10000000; i++)
         nums.push(i)
     }
 }
-console.log(nums.reduce((a,b) => a+b, 0))
+console.log(nums, nums.reduce((a,b) => a+b, 0))
