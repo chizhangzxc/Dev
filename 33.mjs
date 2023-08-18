@@ -1,5 +1,3 @@
-let numerator = 1
-let denominator = 1
 let nums = []
 for( let denominator = 11; denominator < 100; denominator++)
 {
