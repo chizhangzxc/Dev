@@ -1,5 +1,6 @@
 let numerator = 1
 let denominator = 1
+let nums = []
 for( let denominator = 11; denominator < 100; denominator++)
 {
     if(denominator % 10 == 0)
@@ -30,8 +31,11 @@ for( let denominator = 11; denominator < 100; denominator++)
                 if(numerator/denominator == new_numerator/new_denominator)
                 {
                     console.log(numerator, denominator, new_numerator, new_denominator, numerator/denominator)
+                    nums.push(numerator/denominator)
                 }
             }
         }
     }
 }
+
+console.log(1/nums.reduce((a,b) => a*b, 1))
